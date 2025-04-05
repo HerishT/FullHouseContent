@@ -1,0 +1,69 @@
+Real Revenue Competition - Rules and Rubric
+
+Hackathon Format and Schedule:
+
+Competition Overview
+One day hackathon: April 5th, 2025 from 10am-6pm, This competition will begin with an in-person event at Princeton University’s Frist Campus Center. Your team’s goal for this 8 hour period is to build the best AI-powered app, automated content channel, or product that will generate real revenue over the subsequent 3 weeks. 
+Three week revenue period: April 5th - April 26th, Over the three weeks following the hackathon, your team will market and distribute your product to the best of your ability, trying to earn as much money as possible. You are allowed to modify and iterate during this time. 
+Final submission: Midnight April 26th, your team must submit a deck that shares how much profit you have made and other measures of the traction your product has gotten. 
+Award Ceremony: Noon April 28th, on zoom, we will announce the winners of the competition, share their results and hand out prizes. 
+
+Hackathon Schedule:
+
+10:00 - 10:30 am: Check-in 
+10:30 - 11:00 am: Introductions and rules
+11:00 - 11:30 am: Team formation 
+11:30: Start hacking 
+1:00 - 2:00 pm: Lunch
+5:30 - 6:00 pm: Snap shot presentations
+11:00 pm: Link submission deadline
+
+
+
+Rules:
+
+Your project must integrate, or be capable of being integrated within one of Sentient’s products:
+You can use the personality infused model, Dobby, as part of your product (see documentation)
+You can take some part of your product that is agentic, and make it available on Sentient Chat (this can be done and submitted after the in person hackathon)
+Participants MUST submit proof of work at the end of the in-person hackathon in order to be considered for the competition during the operation period
+Participants have 3 weeks during the operation period to generate revenue 
+Participants are allowed to continue to make edits after the conclusion of the hackathon phase
+Revenue must be REAL
+Anything that can be done to personally boost profits is not allowed
+We are looking for genuine creation to see who can build something and market it well enough to generate real value
+We will be analyzing where your revenue comes from to prevent hacking of the system 
+Projects are not allowed to profit by spreading misinformation or breaking the law. 
+Upon submission, teams will be required to submit:
+Links to product/app/website/platform/profile etc.
+Detailed proof of KPIs 
+Engagements:
+Views - total, daily average, max
+Comments - total, daily average, max
+Followers
+Revenue:
+Total, daily average
+Number of paying users/customers
+Number of units sold (if applicable)
+Costs:
+External tool costs
+Marketing / advertisement cost 
+If you are launching a product or app, please use google analytics
+
+
+Available Resources:
+
+Participants will have access to up to $150 in credits to use on any open source model on the Fireworks AI Platform. We ask that you use the large variety of powerful models available on the platform for inference, however teams are welcome to use other existing AI tools and we will reimburse up to $50 of such usage at the end of the competition (we will not reimburse any other LLM usage). 
+
+If teams have demand for more subscriptions/credits, you must either request reimbursement or pay out of pocket 
+
+Rubric:
+Teams will be evaluated on how much money, and traction they are able to generate
+
+If you have any questions:
+
+Reach out on Discord: Real Revenue Hackathon
+
+Or reach out directly to Ryan or Ben:
+btsfinch@gmail.com
+Ryan Winkler
+theintersectionresearch@gmail.com

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Rankings Video Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>College Rankings Video Generator</h1>
+            <p class="lead">Create engaging short-form videos for TikTok and YouTube Shorts</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Generate New Videos
+                    </div>
+                    <div class="card-body">
+                        <form id="pipeline-form">
+                            <div class="mb-3">
+                                <h5>Select Ranking Categories</h5>
+                                {% for section, categories in categories.items() %}
+                                <div class="mb-3">
+                                    <h6>{{ section }}</h6>
+                                    <div class="row">
+                                        {% for category in categories %}
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input category-checkbox" type="checkbox" value="{{ category }}" id="category-{{ loop.index }}">
+                                                <label class="form-check-label" for="category-{{ loop.index }}">
+                                                    {{ category }}
+                                                </label>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            <div class="mb-3">
+                                <h5>Select Audio Mood</h5>
+                                <select class="form-select" id="audio-mood">
+                                    {% if audio_tracks %}
+                                        {% for mood in audio_tracks.keys() %}
+                                        <option value="{{ mood.lower() }}">{{ mood }}</option>
+                                        {% endfor %}
+                                    {% else %}
+                                        <!-- Default options if no audio tracks are loaded -->
+                                        <option value="sad">Sad</option>
+                                        <option value="calm">Calm</option>
+                                        <option value="ambient">Ambient</option>
+                                        <option value="inspirational">Inspirational</option>
+                                    {% endif %}
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Generate Videos</button>
+                        </form>
+
+                        <div class="loading-spinner" id="loading-spinner">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2">Generating videos... This may take a few minutes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        Generated Videos
+                    </div>
+                    <div class="card-body">
+                        <div id="videos-container">
+                            <p id="no-videos-message">No videos generated yet. Use the form above to create videos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Pipeline Status
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <h6>Data Collection</h6>
+                            <span class="badge status-badge" id="data-collection-status">Not Started</span>
+                        </div>
+                        <div class="mb-3">
+                            <h6>Video Generation</h6>
+                            <span class="badge status-badge" id="video-generation-status">Not Started</span>
+                        </div>
+                        <div class="mb-3">
+                            <h6>Last Run</h6>
+                            <span id="last-run">Never</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        About This Tool
+                    </div>
+                    <div class="card-body">
+                        <p>This tool automatically generates short-form videos (10-15 seconds) featuring:</p>
+                        <ul>
+                            <li>College campus backgrounds with slow camera movements</li>
+                            <li>Rankings of various college aspects</li>
+                            <li>Trending instrumental audio tracks</li>
+                        </ul>
+                        <p>Perfect for TikTok and YouTube Shorts to drive engagement and generate revenue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="mb-0">College Rankings Video Generator | Created for REAL REVENUE Competition</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
